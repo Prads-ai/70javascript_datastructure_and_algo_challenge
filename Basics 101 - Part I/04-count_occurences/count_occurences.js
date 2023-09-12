@@ -1,9 +1,11 @@
-// Fist way to do it
+//************************** Fist way to do it **************************************
 count_occurences = (words,char) =>
 {
    return words.split(char).length - 1
 }
-// Second way to do it
+//***********************************************************************
+
+//***************************** Second way to do it *************************************
 count_occurences_II = (words,char) =>
 {
     count = 0
@@ -18,7 +20,7 @@ count_occurences_II = (words,char) =>
     }
     return count;
 }
-
+//******************************************************************************************
 let occurences = count_occurences("hello world",'o')
 let occurences_II = count_occurences_II("hellow world", 'o')
 console.log(occurences)
